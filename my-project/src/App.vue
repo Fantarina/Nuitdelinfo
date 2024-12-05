@@ -6,10 +6,8 @@
 
     <main class="main-content">
       <div class="section left-section">
-        <!-- Exemple d'utilisation des gouttes SVG -->
+        
         <WaterDrop size="50px" color="var(--color-blue-light)" />
-        <WaterDrop size="80px" color="var(--color-blue-deep)" />
-        <WaterDrop size="100px" color="var(--color-blue-night)" />
   
       </div>
       <div id="Poumonshomme" class="Poumons">
