@@ -12,6 +12,7 @@
         <WaterDrop class="Regulation" @click="toggleCards('Regulation')" size="50px" color="var(--color-blue-soft-turquoise)" />
         <WaterDrop class="Ecosysteme" @click="toggleCards('Ecosysteme')" size="50px" color="var(--color-blue-light)" />
         <WaterDrop class="Memoire" @click="toggleCards('Memoire')" size="50px" color="var(--color-blue-deep)" />
+        <WaterDrop class="Profondeur" @click="toggleCards('Prodondeur')" size="50px" color="var(--color-blue-deep)" />
       </div>
 
       <!-- Cartes associées aux gouttes -->
@@ -88,6 +89,20 @@
           title="Mémoire de l'Océan"
           content="Les sédiments marins et les formations géologiques enregistrent l’histoire de la Terre, y compris les changements climatiques et les activités tectoniques."
           source="https://www.futura-sciences.com/planete/questions-reponses/geologie-retrace-t-on-histoire-tectonique-grace-sediments-15518/"
+        />
+      </div>
+      <div v-if="visibleCards['Profondeur']" id="ProfondeurHumain" class="Profondeur">
+        <TextCard
+          title="Profondeur humaine"
+          content="Tout comme l’océan, l’être humain possède des couches visibles et invisibles. En surface, il ou elle peut paraître calme ou agité, mais en profondeur se trouvent des sentiments et des pensées souvent inaccessibles à première vue."
+          source="Nous mêmes"
+        />
+      </div>
+      <div v-if="visibleCards['Profondeur']" id="ProfondeurOcean" class="Profondeur">
+        <TextCard
+          title="Profondeur de l'Océan"
+          content="Les abysses de l’océan rappellent les mystères de l’âme humaine : des zones inexplorées, où résident à la fois des richesses insoupçonnées et des monstres cachés (peurs, traumatismes, désirs profonds)."
+          source="Nous mêmes"
         />
       </div>
     </main>
