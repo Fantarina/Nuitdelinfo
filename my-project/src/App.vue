@@ -108,8 +108,13 @@ export default {
   },
   methods: {
     toggleCards(className) {
-      // Toggle la visibilité des cartes associées à la classe donnée
-      this.visibleCards[className] = !this.visibleCards[className];
+      // Réinitialiser toutes les cartes visibles
+      Object.keys(this.visibleCards).forEach(key => {
+        this.visibleCards[key] = false;
+      });
+
+      // Activer uniquement la carte associée à la classe cliquée
+      this.visibleCards[className] = true;
     },
   },
 };
