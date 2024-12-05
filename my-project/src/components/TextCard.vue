@@ -36,7 +36,6 @@
     margin: 10px 0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     width: 250px;
-    border-radius: 8px;
   }
   
   .text-card:hover {
