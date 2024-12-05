@@ -82,7 +82,7 @@
         <TextCard
           title="Mémoire de l'Océan"
           content="Les sédiments marins et les formations géologiques enregistrent l’histoire de la Terre, y compris les changements climatiques et les activités tectoniques."
->
+/>
         />
       </div>
     </main>
