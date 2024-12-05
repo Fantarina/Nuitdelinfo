@@ -1,6 +1,6 @@
 <template>
   <div class="circle-point" :style="circleStyle" @click="onClick">
-    <slot></slot> <!-- Permet d'ajouter du contenu si nécessaire -->
+    <slot></slot>
   </div>
 </template>
 
@@ -9,19 +9,19 @@ export default {
   props: {
     size: {
       type: String,
-      default: "40px", // Taille par défaut
+      default: "40px", 
     },
     color: {
       type: String,
-      default: "var(--color-blue-soft-turquoise)", // Couleur par défaut
+      default: "var(--color-blue-soft-turquoise)", 
     },
     borderColor: {
       type: String,
-      default: "var(--color-blue-deep)", // Bordure par défaut
+      default: "var(--color-blue-deep)", 
     },
     onClick: {
       type: Function,
-      default: () => {}, // Action au clic, facultative
+      default: () => {}, 
     },
   },
   computed: {
@@ -45,6 +45,6 @@ export default {
 
 <style>
 .circle-point:hover {
-  transform: scale(1.1); /* Agrandissement au survol */
+  transform: scale(1.1); 
 }
 </style>
