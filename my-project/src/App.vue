@@ -104,7 +104,7 @@
   --color-blue-night: #014F86;
   --color-blue-light: #56B4D3;
   --color-blue-soft-turquoise: #88E0EF;
-  --color-white-off: #F2F2F2;
+  --color-white-off: #F1F1F1;
 }
 </style>
 

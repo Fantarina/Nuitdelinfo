@@ -102,7 +102,7 @@
     border: 0.1rem solid var(--color-blue-light); 
     border-radius: 22px;
     color: var(--color-blue-light); 
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 500;
     text-transform: uppercase;
     white-space: nowrap;
