@@ -30,7 +30,6 @@ export default {
         width: this.size,
         height: this.size,
         backgroundColor: this.color,
-        border: `2px solid ${this.borderColor}`,
         borderRadius: "50%",
         display: "flex",
         justifyContent: "center",

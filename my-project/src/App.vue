@@ -14,6 +14,12 @@
           @click="handleCircleClick"
         >
         </CirclePoint>
+      
+        <!-- Exemple d'utilisation des gouttes SVG -->
+        <WaterDrop size="50px" color="var(--color-blue-light)" />
+        <WaterDrop size="80px" color="var(--color-blue-deep)" />
+        <WaterDrop size="100px" color="var(--color-blue-night)" />
+  
       </div>
       <div class="section right-section">
         <TextCard
@@ -38,11 +44,13 @@
 <script>
 import TextCard from "./components/TextCard.vue";
 import CirclePoint from "./components/CirclePoint.vue";
+import WaterDrop from "./components/WaterDrop.vue";
 
 export default {
   components: {
     TextCard,
     CirclePoint,
+    WaterDrop,
   },
   methods: {
     handleCircleClick() {
