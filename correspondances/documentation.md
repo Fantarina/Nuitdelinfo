@@ -14,6 +14,7 @@ partie de l’oxygène et abritent une biodiversité incroyable
 
 https://ocean.org/fr/education/the-ocean-and-humans-are-connected/
 
+Dans toute la suite, que de le part de notre ami chatGPT
 ## Relation poétique
 L’analogie entre l’être humain — homme ou femme — et la mer ou l’océan est souvent utilisée dans la littérature, la poésie et la philosophie pour illustrer la complexité, la profondeur et les émotions humaines. Voici une exploration de cette métaphore :
 
