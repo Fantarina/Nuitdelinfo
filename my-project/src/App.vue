@@ -17,7 +17,7 @@
       </div>
       <div class="section right-section">
         <TextCard
-          title="Points Ronds"
+          source="Points Ronds"
           content="Les points ronds permettent de représenter des indicateurs ou des éléments visuels interactifs."
         />
       </div>
