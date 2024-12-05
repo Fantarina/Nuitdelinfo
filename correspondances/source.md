@@ -31,6 +31,7 @@ Citations:
 [7] https://www.chasse-maree.com/toutsavoir/termes-les-marins-et-gens-de-mer/
 [8] https://essentiels.bnf.fr/fr/societe/environnement/9fcf6cc8-5998-4ce7-9de8-7dee05f324b6-homme-et-mer/article/a34e44d2-e115-4a2b-91a1-82d181070598-ocean-primitif
 
+
 # Arguments scientifiques
 L'analogie entre l'humain (homme ou femme) et la mer ou l'océan peut être illustrée par plusieurs arguments scientifiques, notamment ceux présentés par des chercheurs comme Giovanni Aloisi. Voici quelques points clés qui soulignent cette relation :
 
