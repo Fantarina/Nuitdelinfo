@@ -3,7 +3,7 @@
       <h3 class="text-card-title">{{ title }}</h3>
       <p class="text-card-content">{{ content }}</p>
       <p class="text-card-source">
-        <a href="{{ source }}">En savoir plus</a>
+        <a :href="source" target="_blank" rel="noopener noreferrer">En savoir plus</a>
       </p>
     </div>
   </template>
