@@ -417,7 +417,7 @@ body{
   background-position: center; /* Centrer l'image de fond */
 }
 .section.right-section {
-  background-image: url('@/assets/images/island.jpg'); /* Image d'arrière-plan */
+  background-image: url('@/assets/images/oceanraceforwater.jpg'); /* Image d'arrière-plan */
   background-size: cover; /* Pour couvrir toute la surface de la div */
   background-position: center; /* Centrer l'image de fond */
 }
