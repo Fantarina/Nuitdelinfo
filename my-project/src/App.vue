@@ -159,51 +159,50 @@
         </div>
       </div>
 
-      <div class="section right-section">
+   <div class="section right-section">
         <WaterDrop
-          class="Poumons Ocean"
+          class="Poumons Ocean precise-poumon-ocean"
           :class="{ 'active-drop': isActive('Poumons') }"
           @click="handleClick('Poumons', 'Ocean')"
           size="50px"
           :color="isActive('Poumons') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Circulation Ocean"
+          class="Circulation Ocean precise-circulation-ocean"
           :class="{ 'active-drop': isActive('Circulation') }"
           @click="handleClick('Circulation', 'Ocean')"
           size="50px"
           :color="isActive('Circulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Ecosysteme Ocean"
+          class="Ecosysteme Ocean precise-ecosysteme-ocean"
           :class="{ 'active-drop': isActive('Ecosysteme') }"
           @click="handleClick('Ecosysteme', 'Ocean')"
           size="50px"
           :color="isActive('Ecosysteme') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Memoire Ocean"
+          class="Memoire Ocean precise-memoire-ocean"
           :class="{ 'active-drop': isActive('Memoire') }"
           @click="handleClick('Memoire', 'Ocean')"
           size="50px"
           :color="isActive('Memoire') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Profondeur Ocean"
+          class="Profondeur Ocean precise-profondeur-ocean"
           :class="{ 'active-drop': isActive('Profondeur') }"
           @click="handleClick('Profondeur', 'Ocean')"
           size="50px"
           :color="isActive('Profondeur') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Cycle Ocean"
+          class="Cycle Ocean precise-cycle-ocean"
           :class="{ 'active-drop': isActive('Cycle') }"
           @click="handleClick('Cycle', 'Ocean')"
           size="50px"
           :color="isActive('Cycle') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
       </div>
-      
     </main>
   </div>
 </template>
@@ -487,5 +486,46 @@ audio{
 .buzzer {
   animation: zoom-effect 1.5s infinite; 
   cursor: pointer; 
+}
+
+.precise-poumon-ocean {
+  position: absolute; 
+  top: 25%;
+  left: 93%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+
+.precise-circulation-ocean {
+  position: absolute; 
+  top: 42%; 
+  left: 95%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.precise-ecosysteme-ocean {
+  position: absolute; 
+  top: 60%;
+  right: 1%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.precise-memoire-ocean {
+  position: absolute; 
+  top: 68%;
+  right: 6%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.precise-profondeur-ocean {
+  position: absolute; 
+  top: 87%;
+  right: 1%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
 }
 </style>
