@@ -1,17 +1,16 @@
 <template>
-  <div class="water-drop" :style="{ width: size, height: size }">
-    <svg
-      :width="size"
-      :height="size"
-      viewBox="0 0 100 150"
-      xmlns="http://www.w3.org/2000/svg"
-      :style="{ fill: color }"
-    >
-      <path
-        d="M50 0C50 0 0 75 0 100C0 131 22 150 50 150C78 150 100 131 100 100C100 75 50 0 50 0Z"
-      />
-    </svg>
-  </div>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    :width="size"
+    :height="size"
+    viewBox="0 0 24 24"
+    :fill="color"
+    @click="$emit('click')"
+  >
+    <path
+      d="M12 2C12 2 4 10 4 14C4 17.866 7.13401 21 11 21C14.866 21 18 17.866 18 14C18 10 12 2 12 2Z"
+    ></path>
+  </svg>
 </template>
 
 <script>
@@ -19,23 +18,18 @@ export default {
   props: {
     size: {
       type: String,
-      default: "100px", // Taille par défaut
+      default: "50px",
     },
     color: {
       type: String,
-      default: "var(--color-blue-soft-turquoise)", // Couleur par défaut
+      default: "var(--color-blue-light)",
     },
   },
 };
 </script>
 
 <style>
-.water-drop {
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-.water-drop:hover {
-  transform: scale(1.1); /* Zoom léger au survol */
+svg:hover {
+  cursor: pointer;
 }
 </style>
