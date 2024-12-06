@@ -271,6 +271,10 @@ export default {
   padding: 10px;
 }
 
+.header h1 {
+  margin: 0px;
+}
+
 .content-container {
   display: flex;
   flex: 1;
@@ -343,21 +347,17 @@ export default {
   transition: fill 0.3s ease;
 }
 
-@media (max-width: 1024px) {
-  .section {
-    width: 25%; 
+@media (max-width: 1550px) {
+  .card {
+    position: static; 
+    transform: none; 
   }
 
   .card-section {
-    flex-wrap: wrap; 
-    gap: 20px; 
-  }
-
-  .card {
-    width: 80%; 
-    max-width: 400px;
-    position: static; 
-    transform: none; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
   }
 }
 
