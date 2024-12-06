@@ -21,13 +21,6 @@
           :color="isActive('Circulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Regulation Humain"
-          :class="{ 'active-drop': isActive('Regulation') }"
-          @click="handleClick('Regulation', 'Humain')"
-          size="50px"
-          :color="isActive('Regulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
-        />
-        <WaterDrop
           class="Ecosysteme Humain"
           :class="{ 'active-drop': isActive('Ecosysteme') }"
           @click="handleClick('Ecosysteme', 'Humain')"
@@ -176,13 +169,6 @@
           :color="isActive('Circulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Regulation Ocean"
-          :class="{ 'active-drop': isActive('Regulation') }"
-          @click="handleClick('Regulation', 'Ocean')"
-          size="50px"
-          :color="isActive('Regulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
-        />
-        <WaterDrop
           class="Ecosysteme Ocean"
           :class="{ 'active-drop': isActive('Ecosysteme') }"
           @click="handleClick('Ecosysteme', 'Ocean')"
@@ -286,6 +272,10 @@ export default {
   padding: 10px;
 }
 
+.header h1 {
+  margin: 0px;
+}
+
 .content-container {
   display: flex;
   flex: 1;
@@ -357,6 +347,69 @@ export default {
   fill: var(--color-blue-deep) !important;
   transition: fill 0.3s ease;
 }
+
+@media (max-width: 1550px) {
+  .card {
+    position: static; 
+    transform: none; 
+  }
+
+  .card-section {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .section {
+    width: 100%; 
+    margin-bottom: 15px; 
+  }
+
+  .card-section {
+    flex-direction: column; 
+    gap: 15px; 
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px; 
+    position: static;
+    transform: none; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 16px; 
+    padding: 5px; 
+  }
+
+  .card {
+    width: 100%; 
+    padding: 10px; 
+  }
+
+  .section {
+    margin-bottom: 10px; 
+  }
+
+  .card-section {
+    gap: 10px; 
+  }
+}
+
 </style>
 
 <style scoped>
