@@ -415,7 +415,7 @@ body{
 
 .precise-poumon {
   position: absolute; 
-  top: 25%;
+  top: 30%;
   left: 43%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
@@ -423,7 +423,7 @@ body{
 
 .precise-circulation {
   position: absolute; 
-  top: 30%; 
+  top: 35%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
@@ -431,7 +431,7 @@ body{
 
 .precise-ecosysteme {
   position: absolute; 
-  top: 35%;
+  top: 40%;
   left: 58%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
@@ -439,7 +439,7 @@ body{
 
 .precise-memoire {
   position: absolute; 
-  top: 5%;
+  top: 17%;
   left: 56%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
@@ -447,10 +447,9 @@ body{
 
 .precise-profondeur {
   position: absolute; 
-  top: 5%;
+  top: 17%;
   left: 46%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
-}
-        
+}    
 </style>
