@@ -415,7 +415,7 @@ export default {
 <style scoped>
         .section.left-section {
           background-color: #f0f0f0; /* Couleur d'arrière-plan */
-          background-image: url('@/assets/images/ocean.jpg'); /* Image d'arrière-plan */
+          background-image: url('@/assets/images/fullbody2.jpeg'); /* Image d'arrière-plan */
           background-size: cover; /* Pour couvrir toute la surface de la div */
           background-position: center; /* Centrer l'image de fond */
           padding: 20px; /* Ajoute un peu d'espace intérieur */
