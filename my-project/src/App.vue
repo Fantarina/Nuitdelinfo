@@ -1,41 +1,38 @@
  <template>
   <div class="app-container">
-    <header class="header">
-      <h1>SheSea</h1>
-    </header>
 
     <main class="content-container">
       <div class="section left-section">
         <WaterDrop
-          class="Poumons Humain"
+          class="Poumons Humain precise-poumon"
           :class="{ 'active-drop': isActive('Poumons') }"
           @click="handleClick('Poumons', 'Humain')"
           size="50px"
           :color="isActive('Poumons') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Circulation Humain"
+          class="Circulation Humain precise-circulation"
           :class="{ 'active-drop': isActive('Circulation') }"
           @click="handleClick('Circulation', 'Humain')"
           size="50px"
           :color="isActive('Circulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Ecosysteme Humain"
+          class="Ecosysteme Humain precise-ecosysteme"
           :class="{ 'active-drop': isActive('Ecosysteme') }"
           @click="handleClick('Ecosysteme', 'Humain')"
           size="50px"
           :color="isActive('Ecosysteme') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Memoire Humain"
+          class="Memoire Humain precise-memoire"
           :class="{ 'active-drop': isActive('Memoire') }"
           @click="handleClick('Memoire', 'Humain')"
           size="50px"
           :color="isActive('Memoire') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Profondeur Humain"
+          class="Profondeur Humain precise-profondeur"
           :class="{ 'active-drop': isActive('Profondeur') }"
           @click="handleClick('Profondeur', 'Humain')"
           size="50px"
@@ -235,14 +232,10 @@ export default {
 
       if (type === "Humain") {
         this.visibleCards[humanKey] = true;
-        setTimeout(() => {
-          this.visibleCards[oceanKey] = true;
-        }, 2000);
+        this.visibleCards[oceanKey] = true;
       } else if (type === "Ocean") {
         this.visibleCards[oceanKey] = true;
-        setTimeout(() => {
-          this.visibleCards[humanKey] = true;
-        }, 2000);
+        this.visibleCards[humanKey] = true;
       }
     },
     isActive(category) {
@@ -254,8 +247,8 @@ export default {
 
 <style>
 :root {
-  --color-blue-deep: #080E1E;
-  --color-blue-light: #56B4D3;
+  --color-blue-deep: #56B4D3;
+  --color-blue-light: #080E1E;
 }
 
 .app-container {
@@ -265,15 +258,9 @@ export default {
   height: 100vh;
 }
 
-.header {
-  background-color: var(--color-blue-deep);
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-.header h1 {
+body{
   margin: 0px;
+  padding: 0px;
 }
 
 .content-container {
@@ -400,39 +387,70 @@ export default {
     width: 100%; 
     padding: 10px; 
   }
-
-  .section {
-    margin-bottom: 10px; 
-  }
-
   .card-section {
     gap: 10px; 
   }
 }
 
-</style>
+.section.left-section {
+  background-image: url('@/assets/images/fullbody2.jpeg');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  position: relative;
+  width: 400px;
+  height: 100%; 
+  margin: 0 auto;
+}
+.section.card-section {
+  background-image: url('@/assets/images/fond.jpg'); /* Image d'arrière-plan */
+  background-size: cover; /* Pour couvrir toute la surface de la div */
+  background-position: center; /* Centrer l'image de fond */
+}
+.section.right-section {
+  background-image: url('@/assets/images/island.jpg'); /* Image d'arrière-plan */
+  background-size: cover; /* Pour couvrir toute la surface de la div */
+  background-position: center; /* Centrer l'image de fond */
+}
 
-<style scoped>
-        .section.left-section {
-          background-color: #f0f0f0; /* Couleur d'arrière-plan */
-          background-image: url('@/assets/images/ocean.jpg'); /* Image d'arrière-plan */
-          background-size: cover; /* Pour couvrir toute la surface de la div */
-          background-position: center; /* Centrer l'image de fond */
-          padding: 20px; /* Ajoute un peu d'espace intérieur */
-        }
-        .section.card-section {
-          background-color: #f0f0f0; /* Couleur d'arrière-plan */
-          background-image: url('@/assets/images/fond.jpg'); /* Image d'arrière-plan */
-          background-size: cover; /* Pour couvrir toute la surface de la div */
-          background-position: center; /* Centrer l'image de fond */
-          padding: 20px; /* Ajoute un peu d'espace intérieur */
-        }
-        .section.right-section {
-          background-color: #f0f0f0; /* Couleur d'arrière-plan */
-          background-image: url('@/assets/images/island.jpg'); /* Image d'arrière-plan */
-          background-size: cover; /* Pour couvrir toute la surface de la div */
-          background-position: center; /* Centrer l'image de fond */
-          padding: 20px; /* Ajoute un peu d'espace intérieur */
-        }
+.precise-poumon {
+  position: absolute; 
+  top: 25%;
+  left: 43%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.precise-circulation {
+  position: absolute; 
+  top: 30%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.precise-ecosysteme {
+  position: absolute; 
+  top: 35%;
+  left: 58%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.precise-memoire {
+  position: absolute; 
+  top: 5%;
+  left: 56%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.precise-profondeur {
+  position: absolute; 
+  top: 5%;
+  left: 46%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
         
 </style>
