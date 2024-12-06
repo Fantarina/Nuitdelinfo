@@ -1,4 +1,4 @@
- <template>
+<template>
   <div class="app-container">
 
     <main class="content-container">
@@ -147,6 +147,15 @@
             content="À marée montante, l'énergie croît. À marée haute, elle atteint son pic. En reflux, elle diminue pour préparer la prochaine marée. À marée basse, l’océan se renouvelle avant un nouveau cycle."
             source="https://mmelovary.com/fr-at/blogs/sante-feminine/pollution-ocean-menstruations"
           />
+        </div>
+        <div class="audio-card-section">
+          <audio controls>
+            <source src="/audio/PODCAST-AUDIO-Flo.m4a" type="audio/mpeg" />
+            <p>
+              Votre navigateur ne prend pas en charge l'audio HTML5. Voici un
+              <a href="PODCAST-AUDIO-Flo.m4a">lien vers le fichier audio</a> à la place.
+            </p>
+          </audio>
         </div>
       </div>
 
@@ -374,6 +383,7 @@ body{
     position: static;
     transform: none; 
   }
+
 }
 
 
@@ -415,7 +425,7 @@ body{
 
 .precise-poumon {
   position: absolute; 
-  top: 25%;
+  top: 30%;
   left: 43%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
@@ -423,7 +433,7 @@ body{
 
 .precise-circulation {
   position: absolute; 
-  top: 30%; 
+  top: 35%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
@@ -431,7 +441,7 @@ body{
 
 .precise-ecosysteme {
   position: absolute; 
-  top: 35%;
+  top: 40%;
   left: 58%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
@@ -451,6 +461,14 @@ body{
   left: 46%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
+}    
+.audio-card-section {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1em;
 }
-        
+audio{
+  border-radius: 10px;
+  background-color: #080E1E;
+}
 </style>
