@@ -18,7 +18,7 @@
           :color="isActive('Circulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
         <WaterDrop
-          class="Ecosysteme Humain precise-ecosysteme"
+          class="Ecosysteme Humain precise-ecosysteme buzzer"
           :class="{ 'active-drop': isActive('Ecosysteme') }"
           @click="handleClick('Ecosysteme', 'Humain')"
           size="50px"
@@ -470,5 +470,22 @@ body{
 audio{
   border-radius: 10px;
   background-color: #080E1E;
+}
+
+  @keyframes zoom-effect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.buzzer {
+  animation: zoom-effect 1.5s infinite; 
+  cursor: pointer; 
 }
 </style>
