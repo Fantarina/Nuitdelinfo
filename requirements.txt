@@ -1,0 +1,50 @@
+# Framework Web
+Flask==2.3.3
+
+# Communication avec l'API WordPress
+requests==2.31.0
+
+# JSON parsing et validation (utile pour travailler avec des données WordPress)
+jsonschema==4.19.0
+
+# Gestion de l'authentification JWT (si nécessaire pour votre intégration WordPress)
+pyjwt==2.8.0
+
+# Outils pour le traitement de fichiers CSV ou Excel (en cas de migration de données)
+pandas==2.1.3
+openpyxl==3.1.4
+
+# Gestion des fichiers (upload/download sur WordPress)
+boto3==1.28.65
+
+# Logging et monitoring (optionnel)
+loguru==0.7.1
+
+# Outil de développement (rechargement automatique de Flask en dev)
+python-dotenv==1.0.0
+
+# Framework Web
+Flask==2.3.3
+
+# Communication avec les API Matomo et WordPress
+requests==2.31.0
+
+# Gestion de l'authentification (JWT pour WordPress et OAuth pour Matomo si nécessaire)
+pyjwt==2.8.0
+requests-oauthlib==1.3.1
+
+# JSON parsing et validation
+jsonschema==4.19.0
+
+# Outils pour manipuler et analyser les données (optionnel)
+pandas==2.1.3
+openpyxl==3.1.4
+
+# Logging et monitoring
+loguru==0.7.1
+
+# Environnement de développement
+python-dotenv==1.0.0
+
+# Matomo-specific utilities
+matomo-api==0.0.3  # Une bibliothèque non officielle pour interagir avec l'API de Matomo
