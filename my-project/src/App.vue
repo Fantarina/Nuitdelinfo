@@ -211,6 +211,7 @@
           :color="isActive('Cycle') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
       </div>
+      
     </main>
   </div>
 </template>
