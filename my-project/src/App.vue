@@ -374,6 +374,22 @@ body{
     position: static;
     transform: none; 
   }
+
+ .precise-memoire {
+  position: absolute; 
+  top: 5%;
+  left: 56%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.precise-profondeur {
+  position: absolute; 
+  top: 5%;
+  left: 46%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
 }
 
 
