@@ -20,6 +20,41 @@
           size="50px"
           :color="isActive('Circulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
+        <WaterDrop
+          class="Regulation Humain"
+          :class="{ 'active-drop': isActive('Regulation') }"
+          @click="handleClick('Regulation', 'Humain')"
+          size="50px"
+          :color="isActive('Regulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
+        <WaterDrop
+          class="Ecosysteme Humain"
+          :class="{ 'active-drop': isActive('Ecosysteme') }"
+          @click="handleClick('Ecosysteme', 'Humain')"
+          size="50px"
+          :color="isActive('Ecosysteme') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
+        <WaterDrop
+          class="Memoire Humain"
+          :class="{ 'active-drop': isActive('Memoire') }"
+          @click="handleClick('Memoire', 'Humain')"
+          size="50px"
+          :color="isActive('Memoire') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
+        <WaterDrop
+          class="Profondeur Humain"
+          :class="{ 'active-drop': isActive('Profondeur') }"
+          @click="handleClick('Profondeur', 'Humain')"
+          size="50px"
+          :color="isActive('Profondeur') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
+        <WaterDrop
+          class="Cycle Humain"
+          :class="{ 'active-drop': isActive('Cycle') }"
+          @click="handleClick('Cycle', 'Humain')"
+          size="50px"
+          :color="isActive('Cycle') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
       </div>
 
       <div class="card-section">
@@ -63,6 +98,66 @@
             source="https://www.oceanclock.com/fr/blog/13-les-secrets-des-courants-marins"
           />
         </div>
+
+        <div v-if="visibleCards.EcosystemeHumain" class="card human-card fade-in">
+          <TextCard
+            title="Microbiome humain"
+            content="Le microbiome humain abrite des milliards de micro-organismes dans le tube digestif, sur la peau, et dans d'autres parties du corps, jouant un rôle crucial pour la santé."
+            source="https://www.inrae.fr/alimentation-sante-globale/microbiote_intestinal"
+          />
+        </div>
+        <div v-if="visibleCards.EcosystemeOcean" class="card ocean-card fade-in">
+          <TextCard
+            title="Ecosystème Marin"
+            content="L'océan est un écosystème complexe et varié, abritant une diversité impressionnante d'espèces, des microorganismes aux grandes créatures marines."
+            source="https://planet-vie.ens.fr/thematiques/ecologie/biodiversite/la-biodiversite-dans-l-ocean"
+          />
+        </div>
+
+        <div v-if="visibleCards.MemoireHumain" class="card human-card fade-in">
+          <TextCard
+            title="Mémoire humaine"
+            content="Le cerveau humain stocke des souvenirs et contrôle des comportements à travers des connexions neurologiques."
+            source="https://www.science-et-vie.com/cerveau-et-intelligence/souvenirs-cerveau-memoire-cellules-engrammes-neurones-119783.html"
+          />
+        </div>
+        <div v-if="visibleCards.MemoireOcean" class="card ocean-card fade-in">
+          <TextCard
+            title="Mémoire de l'Océan"
+            content="Les sédiments marins et les formations géologiques enregistrent l’histoire de la Terre, y compris les changements climatiques et les activités tectoniques."
+            source="https://www.futura-sciences.com/planete/questions-reponses/geologie-retrace-t-on-histoire-tectonique-grace-sediments-15518/"
+          />
+        </div>
+
+        <div v-if="visibleCards.ProfondeurHumain" class="card human-card fade-in">
+          <TextCard
+            title="Profondeur humaine"
+            content="Tout comme l’océan, l’être humain possède des couches visibles et invisibles. En surface, il ou elle peut paraître calme ou agité, mais en profondeur se trouvent des sentiments et des pensées souvent inaccessibles à première vue."
+            source="Nous mêmes"
+          />
+        </div>
+        <div v-if="visibleCards.ProfondeurOcean" class="card ocean-card fade-in">
+          <TextCard
+            title="Profondeur de l'Océan"
+            content="Les abysses de l’océan rappellent les mystères de l’âme humaine : des zones inexplorées, où résident à la fois des richesses insoupçonnées et des monstres cachés (peurs, traumatismes, désirs profonds)."
+            source="Nous mêmes"
+          />
+        </div>
+
+        <div v-if="visibleCards.CycleHumain" class="card human-card fade-in">
+          <TextCard
+            title="Cycle Femme"
+            content="La phase folliculaire marque la préparation de l'ovule et la régénération de l'endomètre. Lors de l’ovulation, la fertilité atteint son apogée. La phase lutéale prépare le corps à une grossesse ou un nouveau cycle. Pendant les règles, l’utérus se purifie pour un nouveau départ."
+            source="https://mmelovary.com/fr-at/blogs/sante-feminine/pollution-ocean-menstruations"
+          />
+        </div>
+        <div v-if="visibleCards.CycleOcean" class="card ocean-card fade-in">
+          <TextCard
+            title="Cycles Océans"
+            content="À marée montante, l'énergie croît. À marée haute, elle atteint son pic. En reflux, elle diminue pour préparer la prochaine marée. À marée basse, l’océan se renouvelle avant un nouveau cycle."
+            source="https://mmelovary.com/fr-at/blogs/sante-feminine/pollution-ocean-menstruations"
+          />
+        </div>
       </div>
 
       <div class="section right-section">
@@ -79,6 +174,41 @@
           @click="handleClick('Circulation', 'Ocean')"
           size="50px"
           :color="isActive('Circulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
+        <WaterDrop
+          class="Regulation Ocean"
+          :class="{ 'active-drop': isActive('Regulation') }"
+          @click="handleClick('Regulation', 'Ocean')"
+          size="50px"
+          :color="isActive('Regulation') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
+        <WaterDrop
+          class="Ecosysteme Ocean"
+          :class="{ 'active-drop': isActive('Ecosysteme') }"
+          @click="handleClick('Ecosysteme', 'Ocean')"
+          size="50px"
+          :color="isActive('Ecosysteme') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
+        <WaterDrop
+          class="Memoire Ocean"
+          :class="{ 'active-drop': isActive('Memoire') }"
+          @click="handleClick('Memoire', 'Ocean')"
+          size="50px"
+          :color="isActive('Memoire') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
+        <WaterDrop
+          class="Profondeur Ocean"
+          :class="{ 'active-drop': isActive('Profondeur') }"
+          @click="handleClick('Profondeur', 'Ocean')"
+          size="50px"
+          :color="isActive('Profondeur') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
+        />
+        <WaterDrop
+          class="Cycle Ocean"
+          :class="{ 'active-drop': isActive('Cycle') }"
+          @click="handleClick('Cycle', 'Ocean')"
+          size="50px"
+          :color="isActive('Cycle') ? 'var(--color-blue-deep)' : 'var(--color-blue-light)'"
         />
       </div>
     </main>
