@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div class="app-container">
     <header class="header">
       <h1>SheSea</h1>
@@ -331,11 +331,11 @@ export default {
 
 @keyframes slide-in-left {
   from {
-    transform: translateX(-500px) scale(0.9);
+    transform: translateX(-500px) translateY(0) scale(0.9);
     opacity: 0;
   }
   to {
-    transform: translateX(-250px) scale(1); 
+    transform: translateX(-250px) translateY(500) scale(1); 
     opacity: 1;
   }
 }
@@ -343,11 +343,11 @@ export default {
 
 @keyframes slide-in-right {
   from {
-    transform: translateX(500px) scale(0.9);
+    transform: translateX(500px) translateY(0)scale(0.9);
     opacity: 0;
   }
   to {
-    transform: translateX(250px) scale(1); 
+    transform: translateX(250px) translateY(500) scale(1); 
     opacity: 1;
   }
 }
