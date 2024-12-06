@@ -489,7 +489,7 @@ body{
 .precise-ecosysteme-ocean {
   position: absolute; 
   top: 60%;
-  right: -3%; 
+  right: 1%; 
   transform: translate(-50%, -50%); 
   cursor: pointer;
 }
